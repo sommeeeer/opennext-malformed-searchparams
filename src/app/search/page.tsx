@@ -5,6 +5,7 @@ export default async function Page({
 }) {
   const q = (await searchParams).q;
 
+  console.log("here we have q: ", {q})
   return (
     <>
       <div>q: {q}</div>
