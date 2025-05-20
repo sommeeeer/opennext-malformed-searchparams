@@ -1,0 +1,22 @@
+export default {
+  default: {
+    override: {
+      wrapper: "express-dev",
+      converter: "node",
+      incrementalCache: "fs-dev",
+      queue: "direct",
+      tagCache: "fs-dev",
+    },
+  },
+  imageOptimization: {
+    override: {
+      wrapper: "dummy",
+      converter: "dummy",
+    },
+    loader: "fs-dev",
+    install: {
+      arch: "x64",
+      packages: ["sharp"],
+    },
+  },
+}
