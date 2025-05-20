@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   redirects: async () => [
     {
       source: "/search2",
-      destination: "/search?bar=hello+world&baz=new%2C+earth",
+      destination: "//search?q=äöå€",
       permanent: false,
     },
   ],
